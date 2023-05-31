@@ -521,3 +521,107 @@ foreach($foods as $food){
 
 ?>
 
+//Associative Array use a foreach loop to lopp through all key values...//
+
+<?php
+ 
+ $capitals = array("USA"=>"Washington DC","Japan"=>"Kyoto", 
+ "South Korea"=>"Seoul", 
+ "India"=>"New Delhi");
+
+ foreach($capitals as $key => $value){
+  echo"{$key} = {$value} <br>";
+ }
+
+?>
+
+//Update a key value pair by adding
+$capitals["USA"] = "Las Vegas";
+$capitals["China"] = "Beijing";
+
+$keys = array_keys($capitals);
+//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="index.php" method="post">
+    <label>Enter a country:</label>
+    <input type="text" name="country">
+    <input type="submit">
+  </form>
+</body>
+</html>
+<?php
+ 
+ $capitals = array("USA"=>"Washington DC","Japan"=>"Kyoto", 
+ "South Korea"=>"Seoul", 
+ "India"=>"New Delhi");
+
+$capital = $capitals [$_POST["country"]];
+
+echo"The capital is {$capital}.";
+
+?>
+
+//isset and empty PHP//
+
+<?php
+
+$username = "Christopher";
+
+  if(isset($username)){
+    echo"This variable is set.";
+  }
+  else{
+    echo"This variable is NOT set.";
+  }
+?> //this show the variable is set, and if change isset to empty//
+
+//Checks for username and password fields are not empty//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="index.php" method="post">
+    <label>Username:</label>
+    <input type="text" name="username"><br>
+    <label>Password:</label>
+    <input type="password" name="password"><br>
+    <input type="submit" name="login" value="Login">
+
+  </form>
+</body>
+</html>
+
+
+<?php
+
+if(isset($_POST["login"]))
+  
+  $username = $_POST ["username"];
+  $password = $_POST["password"];
+
+  if(empty($username)){
+    echo"Username is missing...";
+  }
+  elseif(empty($password)){
+    echo"Password is missing...";
+  }
+  else{
+    echo"Hello {$username}";
+  }
+
+?>
