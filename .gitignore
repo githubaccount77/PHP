@@ -5,4 +5,16 @@ types are strings, integer float, boolean... there are morew but these are basic
 
 This website is created using a XAMPP server...
 
-Left off: https://youtu.be/zZ6vybT1HQs?t=4864
+Left off: https://youtu.be/zZ6vybT1HQs?t=6588
+
+
+Switch statements = is useful when using many elseif statements it is more efficent and you write less code. (Refer to form.php)
+
+For loop = repeat some code a certain # of times.
+
+While loop = runs a code infinitely, as long as some condition remains true.
+
+(While loops are better when you need to run something forever.)
+
+Array = a variable which can hold more than one value at a time arrays start at 0 in PHP.
+
