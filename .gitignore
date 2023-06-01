@@ -5,7 +5,7 @@ types are strings, integer float, boolean... there are morew but these are basic
 
 This website is created using a XAMPP server...
 
-Left off: https://youtu.be/zZ6vybT1HQs?t=7897
+Left off: https://youtu.be/zZ6vybT1HQs?t=9869
 
 
 Switch statements = is useful when using many elseif statements it is more efficent and you write less code. (Refer to form.php)
@@ -30,3 +30,12 @@ https://www.w3schools.com/php/php_arrays_associative.asp
 
 // isset() = Returns TRUE if a variable is declared and not null
 //empty() = Returns TRUE if a variable is not declared, false, null, ""
+
+//Function gives the ability to write some code once, reuse when you need it type () after function name to invoke ex. add() subtract() multiply() divide() to sum it up a function is reusable code...
+
+//String functions//
+
+https://www.w3schools.com/php/php_ref_string.asp
+
+https://youtu.be/zZ6vybT1HQs?t=8859
+

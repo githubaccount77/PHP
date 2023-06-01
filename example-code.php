@@ -625,3 +625,174 @@ if(isset($_POST["login"]))
   }
 
 ?>
+
+//Radio Buttons Using a switch is more efficent.//
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="index.php" method="post">
+    <input type="radio" name="credit_card" value="Visa">Visa<br>
+    <input type="radio" value="Master Card"
+    name="credit_card">Master Card<br>
+    <input type="radio" value="American Express"
+    name="credit_card">American Express<br>
+    <input type="submit" name="confirm" value="confirm">
+
+  </form>
+</body>
+</html>
+
+
+<?php
+
+  if(isset($_POST["confirm"])){
+  }
+  $credit_card = null;
+
+    if(isset($_POST["credit_card"])){
+      $credit_card = $_POST["credit_card"];
+
+    }
+
+    switch($credit_card){
+      case "Visa";
+        echo"You selected Visa.";
+        break;
+      case "Master Card";
+        echo"You selected Master Card.";
+        break;
+      case "American Express";
+        echo"You selected American Express.";
+        break;
+      default:
+        echo"Please make a selection.";
+    }
+
+
+
+//     if($credit_card == "Visa"){
+//       echo"You selected Visa.";
+//     }
+//     elseif($credit_card == "Master Card"){
+//       echo"You selected Master Card.";
+
+//     }
+//     elseif($credit_card == "American Express"){
+//       echo"You selected American Express.";
+//     }
+//     else{
+//       echo"Please make a selection.";    
+    
+//     }
+  
+    
+
+// }
+?>
+
+//Checkboxes//
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="index.php" method="post">
+    <input type="checkbox" name="foods[]" value="Pizza">Pizza<br>
+    <input type="checkbox" name="foods[]" value="Hamburger">Hamburger<br>
+    <input type="checkbox" name="foods[]" value="Taco">Taco<br>
+    <input type="checkbox" name="foods[]" value="Pasta">Pasta<br>
+  <input type="submit" name="submit">
+
+  </form>
+</body>
+</html>
+
+
+<?php
+  if(isset($_POST["submit"])){
+    if(isset($_POST["pizza"])){
+      echo"You like Pizza.<br>";
+    }
+    if(isset($_POST["hamburger"])){
+      echo"You like Hamburgers.<br>";
+    }
+    if(isset($_POST["taco"])){
+      echo"You like Tacos.<br>";
+    }
+    if(isset($_POST["pasta"])){
+      echo"You like Pasta.<br>";
+    }
+
+    if(empty($_POST["pizza"])){
+      echo"You DON'T like Pizza.<br>";
+    }
+    if(empty($_POST["hamburger"])){
+      echo"You DON'T like Hamburgers.<br>";
+    }
+    if(empty($_POST["taco"])){
+      echo"You DON'T like Tacos.<br>";
+    }
+    if(empty($_POST["pasta"])){
+      echo"You DON'T like Pasta.<br>";
+    }
+  }
+?>
+
+<?php
+  
+  if(isset($_POST["submit"])){
+
+    $foods = $_POST["foods"];
+    
+    foreach($foods as $food){
+      echo $food . "<br>";
+    }
+
+
+
+    }
+?>
+
+//Functions//
+
+<?php
+ 
+function happy_birthday(){
+  echo"Happy birthday!";
+  echo"Happy birthday!";
+  echo"Happy birthday!";
+  echo"Happy birthday!";
+  echo"Happy birthday!";
+}
+
+happy_birthday(); //This is how to call a function by name then () and close it with... ;//
+
+//below is the parameter example...//
+
+?>
+
+function happy_birthday($first_name){
+  echo"Happy birthday {$first_name}!";
+  echo"Happy birthday!";
+  echo"Happy birthday!";
+  echo"Happy birthday!";
+  echo"Happy birthday!";
+}
+
+happy_birthday("Christopher");
+
+?> 
+
