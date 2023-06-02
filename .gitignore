@@ -5,7 +5,7 @@ types are strings, integer float, boolean... there are morew but these are basic
 
 This website is created using a XAMPP server...
 
-Left off: https://youtu.be/zZ6vybT1HQs?t=9869
+Left off: https://youtu.be/zZ6vybT1HQs?t=12395
 
 
 Switch statements = is useful when using many elseif statements it is more efficent and you write less code. (Refer to form.php)
@@ -38,4 +38,34 @@ https://www.w3schools.com/php/php_arrays_associative.asp
 https://www.w3schools.com/php/php_ref_string.asp
 
 https://youtu.be/zZ6vybT1HQs?t=8859
+
+//Sanitize PHP code you should both sanitize and filter user input//
+
+https://youtu.be/zZ6vybT1HQs?t=9869
+
+https://www.w3schools.com/php/php_filter.asp
+
+//Include PHP files//
+
+https://www.w3schools.com/php/php_includes.asp
+
+//PHP Cookies//
+
+https://www.w3schools.com/php/php_cookies.asp
+
+//PHP Sessions//
+
+https://www.w3schools.com/php/php_sessions.asp
+
+//PHP Server//
+
+https://www.w3schools.com/php/php_superglobals_server.asp
+
+
+//PHP Password Hash//
+
+https://www.php.net/manual/en/function.password-hash.php
+
+
+
 
